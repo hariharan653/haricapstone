@@ -69,5 +69,5 @@ export {
   getFullName,
   days,
   submitFormArrayToString,
-  calculateEMI
+  calculateEMI,
 };
