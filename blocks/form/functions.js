@@ -61,7 +61,7 @@ function calculateEMI(loanAmountDetail,rateOfInterest,loanTenureDetail) {
     return 0;
   }
 
-  const emi = (P * R * (1+R) ** N ) / (((1+R) ** N)-1);
+  const emi = (P * R * (1 + R) ** N ) / (((1 + R) ** N) - 1);
   return Math.round(emi);
 }
 
