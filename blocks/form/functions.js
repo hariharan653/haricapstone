@@ -61,4 +61,4 @@ function calculateEMI(l_amount_detail,roi_detail,l_tenure_detail) {
   return Math.round(emi);
 }
 
-export { getFullName, days, submitFormArrayToString, calculateEMI };
+export { getFullName, days, submitFormArrayToString, calculateEMI, };
