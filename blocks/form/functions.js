@@ -46,22 +46,22 @@ function days(endDate, startDate) {
 
 /**
  * Calculates EMI
- * @param {number} l_amount_detail Loan amount
- * @param {number} roi_detail Rate of interest
- * @param {number} l_tenure_detail Loan tenure in months
+ * @param {number} loanAmountDetail Loan amount
+ * @param {number} rateOfInterest Rate of interest
+ * @param {number} loanTenureDetail Loan tenure in months
  * @returns {number} EMI amount
  */
 function calculateEMI(l_amount_detail,roi_detail,l_tenure_detail) {
 
-  const P = Number(l_amount_detail);
-  const R = Number(roi_detail) / 12 / 100;
-  const N = Number(l_tenure_detail);
+  const P = Number(loanAmountDetail);
+  const R = Number(rateOfInterest) / 12 / 100;
+  const N = Number(loanTenureDetail);
 
-  if(!P || !R || !N){
+  if (!P || !R || !N) {
     return 0;
   }
 
-  const emi = (P * R * Math.pow(1+R,N))/(Math.pow(1+R,N) - 1);
+  const emi = (P * R * (1+R) ** N ) / (((1+R) ** N)-1);
   return Math.round(emi);
 }
 
