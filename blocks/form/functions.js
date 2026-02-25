@@ -51,7 +51,7 @@ function days(endDate, startDate) {
  * @param {number} loanTenureDetail Loan tenure in months
  * @returns {number} EMI amount
  */
-function calculateEMI(l_amount_detail,roi_detail,l_tenure_detail) {
+function calculateEMI(loanAmountDetail,rateOfInterest,loanTenureDetail) {
 
   const P = Number(loanAmountDetail);
   const R = Number(rateOfInterest) / 12 / 100;
