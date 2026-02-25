@@ -51,8 +51,7 @@ function days(endDate, startDate) {
  * @param {number} loanTenureDetail Loan tenure in months
  * @returns {number} EMI amount
  */
-function calculateEMI(loanAmountDetail,rateOfInterest,loanTenureDetail) {
-
+function calculateEMI(loanAmountDetail, rateOfInterest, loanTenureDetail) {
   const P = Number(loanAmountDetail);
   const R = Number(rateOfInterest) / 12 / 100;
   const N = Number(loanTenureDetail);
@@ -62,7 +61,13 @@ function calculateEMI(loanAmountDetail,rateOfInterest,loanTenureDetail) {
   }
 
   const emi = (P * R * (1 + R) ** N ) / (((1 + R) ** N) - 1);
+  
   return Math.round(emi);
 }
 
-export { getFullName, days, submitFormArrayToString, calculateEMI };
+export { 
+  getFullName,
+  days,
+  submitFormArrayToString,
+  calculateEMI
+};
