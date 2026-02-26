@@ -43,9 +43,8 @@ function days(endDate, startDate) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
-
-export { 
+export{ 
   getFullName,
   days,
   submitFormArrayToString,
- };
+};
