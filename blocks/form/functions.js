@@ -44,30 +44,8 @@ function days(endDate, startDate) {
 
 // eslint-disable-next-line import/prefer-default-export
 
-/**
- * Calculates EMI
- * @param {number} loanAmountDetail Loan amount
- * @param {number} rateOfInterest Rate of interest
- * @param {number} loanTenureDetail Loan tenure in months
- * @returns {number} EMI amount
- */
-function calculateEMI(loanAmountDetail, rateOfInterest, loanTenureDetail) {
-  const P = Number(loanAmountDetail);
-  const R = Number(rateOfInterest) / 12 / 100;
-  const N = Number(loanTenureDetail);
-
-  if (!P || !R || !N) {
-    return 0;
-  }
-
-  const emi = (P * R * (1 + R) ** N ) / (((1 + R) ** N) - 1);
-  
-  return Math.round(emi);
-}
-
 export { 
   getFullName,
   days,
   submitFormArrayToString,
-  calculateEMI,
-};
+ };
