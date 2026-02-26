@@ -71,9 +71,12 @@ function calculateEMI(loanAmountDetail, loanTenureDetail, rateOfInterest) {
 
 window.calculateEMI = calculateEMI;
 
-if (window.guideBridege) {
-  window.guideBridge.registerFunction('calculateEMI', calculateEMI);
-}
+document.addEventListener('bridgeInitializeStart', () => {
+  if (window.guideBridege) {
+    window.guideBridge.registerFunction('calculateEMI', calculateEMI);
+  }
+});
+
 // eslint-disable-next-line import/prefer-default-export
 export {
   getFullName,
