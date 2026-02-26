@@ -68,6 +68,8 @@ function calculateEMI(loanAmountDetail, loanTenureDetail, rateOfInterest) {
   const emi = (principal * monthlyRate * power) / (power - 1);
   return Math.round(emi);
 }
+
+window.calculateEMI = calculateEMI;
 // eslint-disable-next-line import/prefer-default-export
 export {
   getFullName,
