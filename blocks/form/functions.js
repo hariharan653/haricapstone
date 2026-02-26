@@ -43,8 +43,35 @@ function days(endDate, startDate) {
 }
 
 // eslint-disable-next-line import/prefer-default-export
+/**
+ * Calculates EMI (Equated Monthly Installment)
+ * @param {number} loanAmountDetail Loan amount (INR)
+ * @param {number} loanTenureDetail Loan tenure (in months)
+ * @param {number} rateOfInterest Rate of interest
+ * @returns {number} EMI amount
+ */
+function calculateEMI(loanAmountDetail, loanTenureDetail, rateOfInterest) {
+  const principal = Number(loanAmountDetail);
+  const tenure = Number(loanTenureDetail);
+  const monthlyRate = Number(rateOfInterest) / 12 / 100;
+
+  if (!principal || !tenure) {
+    return 0;
+  }
+
+  if (!monthlyRate) {
+    return Math.round(principal / tenure);
+  }
+
+  const power = (1 + monthlyRate) ** tenure;
+
+  const emi = (principal * monthlyRate * power) / (power - 1);
+  return Math.round(emi);
+}
+// eslint-disable-next-line import/prefer-default-export
 export {
   getFullName,
   days,
   submitFormArrayToString,
+  calculateEMI,
 };
