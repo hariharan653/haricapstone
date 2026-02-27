@@ -522,6 +522,16 @@ main .file-wrapper .file-description button::after{
     transform: translate(-50%, -50%);
 }
 
+main .form .field-panel3 .field-wrapper {
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+main .form .field-panel3 .field-wrapper:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
 /** Wizard Styling */
 main .form form .wizard  {
   display: grid;
@@ -837,3 +847,22 @@ main .form .field-income-verification-text {
     line-height: 1.5;
     max-width: 320px;
 }
+
+main .form .field-panel3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 25px 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+main .form .field-panel3 .field-wrapper p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f5bd3;
+    margin: 0;
+}
+
