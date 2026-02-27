@@ -381,6 +381,16 @@ main .form .form-image-wrapper img {
     height: auto;
   }
 
+main .form fieldset[name="header"] img:first-child {
+    height: 50px;
+    width: auto;
+}
+
+main .form fieldset[name="header"] img:last-child {
+    height: 55px;
+    width: auto;
+}
+
 /* For cards with icons or images */
 main .form form fieldset.cards > .radio-wrapper > label > img,
 main .form form fieldset.cards > .checkbox-wrapper > label > img {
@@ -630,6 +640,12 @@ main .form form .panel-wrapper{
   gap: var(--form-field-vert-gap) var(--form-field-horz-gap);
 }
 
+main .form fieldset[name="header"] .panel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 main .form form .repeat-wrapper{
     display: grid;
     grid-template-columns: repeat(var(--form-columns), minmax(0, 1fr));
@@ -793,6 +809,13 @@ main .form form select[multiple] {
     height: calc(42px + 50px);
 }
 
+main .form fieldset[name="header"] {
+    background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 0 0 20px;
+}
+
 main .form form .field-footer-text {
     background: linear-gradient(90deg, #003a8c, #005cbf);
     padding: 16px 0;
@@ -802,11 +825,10 @@ main .form form .field-footer-text {
 
 main .form .field-importantlinktext p {
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.6;
     color: #5f6368;
-    max-width:900px;
-    margin: 25px auto 10px;
+    margin: 0;
 }
 
 main .form form .field-footer-text p {
@@ -877,8 +899,10 @@ main .form .field-panel3 .field-wrapper p {
 
 main .form .field-importantlinktext{
     position: relative;
+    margin: 30px 0;
     padding-top: 25px;
     margin-bottom: 30px;
+    border-top: 1px solid #e6e6e6;
 }
 
 main .form .field-importantlinktext::before {
