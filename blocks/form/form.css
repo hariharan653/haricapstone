@@ -522,26 +522,6 @@ main .file-wrapper .file-description button::after{
     transform: translate(-50%, -50%);
 }
 
-main .form .button-wrapper button {
-    cursor:pointer
-}
-
-main .form .button-wrapper button:hover {
-    border: 3px solid #fff;
-    color: #fff;
-    background-color: var(--button-secondary-color);
-}
-
-main .form .button-wrapper button[disabled] {
-    cursor:auto
-}
-
-main .form .button-wrapper button[disabled]:hover {
-    border: 3px solid var(--button-secondary-color);
-    color: var(--button-secondary-color);
-    background-color: transparent;
-}
-
 /** Wizard Styling */
 main .form form .wizard  {
   display: grid;
@@ -804,7 +784,7 @@ main .form form select[multiple] {
 }
 
 main .form form .field-footer-text {
-    background: linear-gradient(90deg, #0b4fa3, #1e73be);
+    background: linear-gradient(90deg, #003a8c, #005cbf);
     padding: 16px 0;
     text-align: center;
     border: none;
@@ -815,4 +795,29 @@ main .form form .field-footer-text p {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+}
+
+main .form .button-wrapper button {
+    background: linear-gradient(90deg, #2f5bd3, #4a7df0);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+    min-width: 220px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%)
+}
+
+main .form .button-wrapper button:hover {
+    background: linear-gradient(90deg ,#244bb8, #3c6be0);
+    transform: translateY(-2px);
+}
+
+main .form .button-wrappr button:disabled {
+    background: #b0b8d8;
+    cursor: not-allowed;
+    box-shadow: none;
 }
