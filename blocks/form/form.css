@@ -827,13 +827,13 @@ main .form .button-wrapper button[disabled]:hover {
 }
 
 main .form .field-income-verification-text {
-    background-color: #F5F9FF;
-    border: 1px solid #cfe3ff;
+    background-color: #fff8ef;
+    border: 1px solid #e6c27a;
     border-radius: 8px;
     padding: 12px 16px;
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 14px;
-    color: #1a1a1a;
-    width: fit-content;
-    max-width: 350px;
+    color: #5c4b1e;
+    line-height: 1.5;
+    max-width: 320px;
 }
