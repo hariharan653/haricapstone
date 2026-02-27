@@ -800,7 +800,7 @@ main .form form .field-footer-text {
     border: none;
 }
 
-main .form [class*="field-importantLinkText"] p {
+main .form .field-importantlinktext p {
     text-align: center;
     font-size: 15px;
     line-height: 1.6;
@@ -875,13 +875,13 @@ main .form .field-panel3 .field-wrapper p {
     margin: 0;
 }
 
-main .form [class*="field-importantLinkText"]{
+main .form .field-importantlinktext{
     position: relative;
     padding-top: 25px;
     margin-bottom: 30px;
 }
 
-main .form [class*="field-importantLinkText"]::before {
+main .form .field-importantlinktext::before {
     content: "";
     position: absolute;
     top: 0;
