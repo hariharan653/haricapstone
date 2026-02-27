@@ -800,6 +800,15 @@ main .form form .field-footer-text {
     border: none;
 }
 
+main .form [class*="field-importantLinkText"] p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #5f6368;
+    max-width:900px;
+    margin: 25px auto 10px;
+}
+
 main .form form .field-footer-text p {
     margin: 0;
     color: #fff;
@@ -866,3 +875,18 @@ main .form .field-panel3 .field-wrapper p {
     margin: 0;
 }
 
+main .form [class*="field-importantLinkText"]{
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+main .form [class*="field-importantLinkText"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
