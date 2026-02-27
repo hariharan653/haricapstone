@@ -379,16 +379,6 @@ main .form form fieldset.cards > .checkbox-wrapper > input:focus ~ label {
 main .form .form-image-wrapper img {
     max-width: 100%;
     height: auto;
-  }
-
-main .form fieldset[name="header"] img:first-child {
-    height: 50px;
-    width: auto;
-}
-
-main .form fieldset[name="header"] img:last-child {
-    height: 55px;
-    width: auto;
 }
 
 /* For cards with icons or images */
@@ -397,6 +387,16 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
     max-width: 18px;
     max-height: 18px;
     object-fit: contain;
+}
+
+main .form fieldset[name="header"] .field-wrapper[name="image1"] img {
+    height: 50px;
+    width: auto;
+}
+
+main .form fieldset[name="header"] .field-wrapper[name="image2"] img {
+    height: 55px;
+    width: auto;
 }
 
 /* Responsive adjustments for cards */
@@ -535,6 +535,10 @@ main .file-wrapper .file-description button::after{
 main .form .field-panel3 .field-wrapper {
     text-align: center;
     transition: 0.3s ease;
+}
+
+main .form fieldset[name="header"] .field-wrapper {
+    grid-column: unset;
 }
 
 main .form .field-panel3 .field-wrapper:hover {
@@ -813,11 +817,10 @@ main .form fieldset[name="header"] {
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
     padding: 20px 40px;
     border: none;
-    border-radius: 0 0 20px;
 }
 
 main .form form .field-footer-text {
-    background: linear-gradient(90deg, #003a8c, #005cbf);
+    background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
     padding: 16px 0;
     text-align: center;
     border: none;
