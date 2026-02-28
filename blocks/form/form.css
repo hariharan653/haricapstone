@@ -172,8 +172,8 @@ main .form select {
     border-radius: 0.25rem;
 }
 
-.loan-summary-panel .field-emiamountdetail input,
-.loan-summary-panel .field-rateofinterest input {
+.field-loan-summary-panel .field-emiamountdetail input,
+.field-loan-summary-panel .field-rateofinterest input {
     border: none;
     background: transparent;
     font-weight: 600;
@@ -991,28 +991,28 @@ main .form .field-loantenuredetail input[type="number"] {
    border-radius: 8px;
 }
 
-.loan-summary-panel {
+.field-loan-summary-panel {
     background-color: #b29564;
     border-radius: 16px;
     padding: 24px;
     max-width: 380px;
 }
 
-.loan-summary-panel .field-emiamountdetail,
-.loan-summary-panel .field-rateofinterest,
-.loan-summary-panel .field-taxes {
+.field-loan-summary-panel .field-emiamountdetail,
+.field-loan-summary-panel .field-rateofinterest,
+.field-loan-summary-panel .field-taxes {
     border-left: 3px solid #f3a533;
     padding-left: 12px;
     margin-bottom: 18px;
 }
 
-.loan-summary-panel .cmp-text:first-child {
+.field-loan-summary-panel .cmp-text:first-child {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.loan-summary-panel .field-loanoffernote {
+.field-loan-summary-panel .field-loanoffernote {
     background-color: #c9822b;
     color: #fff;
     padding: 16px;
