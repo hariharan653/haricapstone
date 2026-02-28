@@ -250,6 +250,16 @@ main .form fieldset[name="form-accordian"] > legend {
     border-radius: 12px;
 }
 
+main .form fieldset[name="loandetails"] > legend,
+main .form fieldset[name="personaldetails"] > legend {
+    background: linear-gradient(90deg, #2f80ed, #1e5cb3);
+    color: #fff;
+    padding: 18px 24px;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
 main .form form fieldset.checkbox-group-wrapper > legend,
 main .form form fieldset.radio-group-wrapper > legend {
     padding-left: 0;
@@ -685,9 +695,18 @@ main .form form .repeat-wrapper{
     gap: var(--form-field-vert-gap) var(--form-field-horz-gap);
 }
 
+main .form fieldset[name="loandetails"] .panel-wrapper,
+main .form fieldset[name="personaldetails"] .panel-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    padding: 30px 30px 35px;
+}
+
 main .form form .wizard.left .panel-wrapper{
   flex: 1;
 }
+
 
 @media (width >= 1200px) {
     main .form form .form-textarea-wrapper,
@@ -1052,6 +1071,56 @@ main .form .field-loantenuredetail input[type="number"] {
     color: #222;
     margin-top: 6px;
 }
+
+main .form fieldset[name="loandetails"],
+main .form fieldset[name="personaldetails"] {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 6%);
+    padding: 0 !important;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+main .form fieldset[name="loandetails"] .field-wrapper > div,
+main .form fieldset[name="personaldetails"] .field-wrapper > div {
+    border-left: 30px solid #2f80ed;
+    padding-left: 14px;
+}
+
+main .form fieldset[name="loandetails"] .field-label,
+main .form fieldset[name="personaldetails"] .field-label {
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+main .form fieldset[name="loandetails"] .field-value,
+main .form fieldset[name="personaldetails"] .field-value {
+    font-size: 16px;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+@media (width <= 992px){
+    main .form fieldset[name="loandetails"] .panel-wrapper,
+    main .form fieldset[name="personaldetails"] .panel-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (width <= 600px) {
+    main .form fieldset[name="loandetails"] .panel-wrapper,
+    main .form fieldset[name="personaldetails"] .panel-wrapper {
+        grid-template-columns: 1fr;
+
+}
+}
+
+
+
 
 
 
