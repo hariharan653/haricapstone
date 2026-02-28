@@ -187,14 +187,6 @@ main .form input:disabled{
     background-color: var(--form-input-disable-color);
 }
 
-main .form .field-loandetails input,
-main .form .field-personaldetails input {
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 14px;
-}
-
 main .form form .radio-wrapper.field-invalid > input,
 main .form form .checkbox-wrapper.field-invalid > input {
     outline: 1px solid var(--form-error-color);
@@ -220,20 +212,6 @@ main .form input[type='radio'] {
 main .form textarea {
     min-height: 100px;
 }
-
-main .form .field-loandetails > legend,
-main .form .field-personaldetails > legend {
-    background: #2f80ed !important;
-    color: white !important;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 14px 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 main .form fieldset:not(.checkbox-group-wrapper, .radio-group-wrapper) legend {
     font-weight: var(--form-fieldset-legend-font-weight);
@@ -587,11 +565,6 @@ main .form fieldset[name="header"] .field-wrapper {
     grid-column: unset;
 }
 
-main .form fieldset[name="loandetails"] .field-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
 main .form .field-panel3 .field-wrapper:hover {
     transform: translateY(-4px);
     cursor: pointer;
@@ -700,12 +673,6 @@ main .form form .panel-wrapper{
   gap: var(--form-field-vert-gap) var(--form-field-horz-gap);
 }
 
-main .form .field-loandetails .panel-wrapper,
-main .form .field-personaldetails .panel-wrapper {
-    padding: 25px 30px;
-    background: #fff;
-}
-
 main .form fieldset[name="header"] .panel-wrapper {
     display: flex;
     align-items: center;
@@ -716,12 +683,6 @@ main .form form .repeat-wrapper{
     display: grid;
     grid-template-columns: repeat(var(--form-columns), minmax(0, 1fr));
     gap: var(--form-field-vert-gap) var(--form-field-horz-gap);
-}
-
-main .form fieldset[name="loandetails"] .panel-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
 }
 
 main .form form .wizard.left .panel-wrapper{
@@ -900,13 +861,6 @@ main .form .field-importantlinktext p {
     line-height: 1.6;
     color: #5f6368;
     margin: 0;
-}
-
-main .form .field-loandetails p,
-main .form .field-personaldetails p {
-    font-size: 15px;
-    font-weight: 600;
-    color: #1f2937;
 }
 
 main .form form .field-footer-text p {
@@ -1099,100 +1053,21 @@ main .form .field-loantenuredetail input[type="number"] {
     margin-top: 6px;
 }
 
-main .form fieldset[name="form-accordian"] {
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgb(0 0 0 / 4%);
-    overflow: hidden;
-    border: none;
-}
-
-main .form fieldset[name="loandetails"],
-main .form fieldset[name="personaldetails"] {
-    padding: 16px 0 !important;
-    border-radius: 12px;
-    background: #3981df;
-    margin-bottom: 30px;
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-}
-
-main .form fieldset[name="form-accordian"] .field-label {
-    font-size: 13px;
-    font-weight: 500;
-    color: #6b7280;
-    margin-bottom: 6px;
-}
-
-main .form fieldset[name="form-accordian"] .field-wrapper p,
-main .form fieldset[name="form-accordian"] .field-wrapper span {
-    font-size: 15px;
-    font-weight: 600;
-    color: #111827;
-}
-
-main .form fieldset[name="form-accordian"] a {
-    color: #1e5cb3;
-    font-weight:500 ;
-    text-decoration: none;
-}
-
-main .form fieldset[name="form-accordian"] a:hover {
-    text-decoration: underline;
-}
-
-main .form fieldset[name="personaldetails"] .field-current-address {
-    grid-column: span 4;
-}
-
-main .form .field-form-accordian {
-    margin-top: 30px;
-}
-
-main .form .field-loandetails,
-main .form .field-personaldetails {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
-    margin-bottom: 24px;
-    overflow: hidden;
-}
-
-main .form .field-loandetails > legend::after,
-main .form .field-personaldetails > legend::after {
-    font-size: 14px;
-}
-
-main .form fieldset[name="personaldetails"] .field-wrapper > div
-main .form fieldset[name="loandetails"] .field-wrapper > div {
-    border-left: 3px solid #2f80ed;
-    padding-left: 12px;
-}
-
-main .form fieldset[name="loandetails"] .field-label {
-    font-size: 13px;
-    color: #777;
-}
-
-main .form fieldset[name="loandetails"] .field-value {
-    font-size: 15px;
-    color: #222;
-    font-weight: 600;
-}
-
-@media (width <= 768px) {
-    main .form fieldset[name="loandetails"] .panel-wrapper,
-    main .form fieldset[name="personaldetails"] .panel-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    main .form fieldset[name="personaldetails"] .field-current-address {
-        grid-column: span 1;
-    }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
