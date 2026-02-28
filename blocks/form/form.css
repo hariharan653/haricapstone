@@ -700,7 +700,7 @@ main .form fieldset[name="personaldetails"] .panel-wrapper {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     gap: 28px;
-    padding: 30px 30px 35px;
+    padding: 30px;
 }
 
 main .form form .wizard.left .panel-wrapper{
@@ -1084,7 +1084,7 @@ main .form fieldset[name="personaldetails"] {
 
 main .form fieldset[name="loandetails"] .field-wrapper > div,
 main .form fieldset[name="personaldetails"] .field-wrapper > div {
-    border-left: 30px solid #2f80ed;
+    border-left: 3px solid #2f80ed;
     padding-left: 14px;
 }
 
