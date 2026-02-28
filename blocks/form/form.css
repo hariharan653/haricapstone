@@ -172,19 +172,19 @@ main .form select {
     border-radius: 0.25rem;
 }
 
+.loan-summary-panel .field-emiamountdetail input,
+.loan-summary-panel .field-rateofinterest input {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+}
+
 main .form input:hover, main .form select:hover {
     border-color: rgb(90 92 96);
 }
 
 main .form input:disabled{
     background-color: var(--form-input-disable-color);
-}
-
-main .form .loan-summary-panel .field-emiamountdetail input,
-main .form .loan-summary-panel .field-rateofinterest input {
-    border: none;
-    background: transparent;
-    font-weight: 600;
 }
 
 main .form form .radio-wrapper.field-invalid > input,
@@ -991,28 +991,28 @@ main .form .field-loantenuredetail input[type="number"] {
    border-radius: 8px;
 }
 
-main .form .loan-summary-panel {
+.loan-summary-panel {
     background-color: #b29564;
     border-radius: 16px;
     padding: 24px;
     max-width: 380px;
 }
 
-main .form .loan-summary-panel .field-emiamountdetail,
-main .form .loan-summary-panel .field-rateofinterest,
-main .form .loan-summary-panel .field-taxes {
+.loan-summary-panel .field-emiamountdetail,
+.loan-summary-panel .field-rateofinterest,
+.loan-summary-panel .field-taxes {
     border-left: 3px solid #f3a533;
     padding-left: 12px;
     margin-bottom: 18px;
 }
 
-main .form .loan-summary-panel .cmp-text:first-child {
+.loan-summary-panel .cmp-text:first-child {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-main .form .loan-summary-panel .field-loanoffernote {
+.loan-summary-panel .field-loanoffernote {
     background-color: #c9822b;
     color: #fff;
     padding: 16px;
