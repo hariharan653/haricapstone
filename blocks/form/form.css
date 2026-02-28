@@ -279,7 +279,7 @@ main .form .checkbox-wrapper label {
 }
 
 main .form .field-r-amount label,
-main .form .field-r-tenure label {
+main .form .field-r-month label {
    font-weight: 600;
    font-size: 16px;
    margin-bottom: 15px;
@@ -927,24 +927,24 @@ main .form .field-importantlinktext::before {
 }
 
 main .form .field-r-amount input[type="range"],
-main .form .field-r-tenure input[type="range"] {
+main .form .field-r-month input[type="range"] {
     appearance: none;
     width: 100%;
     height: 4px;
-    background: #f3c58b;
+    background: #f5a623;
     border-radius: 4px;
     outline: none;
 }
 
 main .form .field-r-amount input[type="range"]::-webkit-slider-runnable-track ,
-main .form .field-r-tenure input[type="range"]::-webkit-slider-runnable-track {
+main .form .field-r-month input[type="range"]::-webkit-slider-runnable-track {
     height: 4px;
-    background: #f3c58b;
+    background: #f5a623;
     border-radius: 4px;
 }
 
 main .form .field-r-amount input[type="range"]::-webkit-slider-thumb ,
-main .form .field-r-tenure input[type="range"]::-webkit-slider-thumb {
+main .form .field-r-month input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 18px;
     height: 18px;
@@ -956,14 +956,14 @@ main .form .field-r-tenure input[type="range"]::-webkit-slider-thumb {
 }
 
 main .form .field-r-amount input[type="range"]::-moz-range-track ,
-main .form .field-r-tenure input[type="range"]::-moz-range-track {
+main .form .field-r-month input[type="range"]::-moz-range-track {
     height: 4px;
-    background: #f3c58b;
+    background: #f5a623;
     border-radius: 4px;
 }
 
 main .form .field-r-amount input[type="range"]::-moz-range-thumb ,
-main .form .field-r-tenure input[type="range"]::-moz-range-thumb {
+main .form .field-r-month input[type="range"]::-moz-range-thumb {
     width: 18px;
     height: 18px;
     background: #1e5cb3;
@@ -973,7 +973,7 @@ main .form .field-r-tenure input[type="range"]::-moz-range-thumb {
 }
 
 main .form .field-r-amount,
-main .form .field-r-tenure {
+main .form .field-r-month {
     margin-bottom: 40px;
 }
 
