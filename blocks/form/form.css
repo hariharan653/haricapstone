@@ -695,14 +695,6 @@ main .form form .repeat-wrapper{
     gap: var(--form-field-vert-gap) var(--form-field-horz-gap);
 }
 
-main .form fieldset[name="loandetails"] .panel-wrapper,
-main .form fieldset[name="personaldetails"] .panel-wrapper {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-    padding: 30px;
-}
-
 main .form form .wizard.left .panel-wrapper{
   flex: 1;
 }
