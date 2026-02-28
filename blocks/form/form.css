@@ -241,6 +241,19 @@ main .form form fieldset.radio-group-wrapper {
     margin-left:0;
 }
 
+main .form fieldset[name="form-accordian"] > legend {
+    background: #f2f4f7;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
 main .form form fieldset.checkbox-group-wrapper > legend,
 main .form form fieldset.radio-group-wrapper > legend {
     padding-left: 0;
@@ -671,6 +684,12 @@ main .form form .repeat-wrapper{
     gap: var(--form-field-vert-gap) var(--form-field-horz-gap);
 }
 
+main .form fieldset[name="loandetails"] .panel-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
 main .form form .wizard.left .panel-wrapper{
   flex: 1;
 }
@@ -1013,7 +1032,7 @@ main .form .field-loantenuredetail input[type="number"] {
 }
 
 .field-loan-summary-panel .field-loanoffernote {
-    background-color: #c9822b;
+    background-color: #d08a2f;
     color: #fff;
     padding: 16px;
     margin: 24px -24px -24px;
@@ -1037,6 +1056,62 @@ main .form .field-loantenuredetail input[type="number"] {
     font-weight: 700;
     color: #222;
     margin-top: 6px;
+}
+
+main .form fieldset[name="form-accordian"] {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 4%);
+    overflow: hidden;
+    border: none;
+}
+
+main .form fieldset[name="loandetails"],
+main .form fieldset[name="personaldetails"] {
+    padding: 24px;
+    border: none;
+    background: #fff;
+}
+
+main .form fieldset[name="form-accordian"] .field-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+main .form fieldset[name="form-accordian"] .field-wrapper p,
+main .form fieldset[name="form-accordian"] .field-wrapper span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+}
+
+main .form fieldset[name="form-accordian"] a {
+    color: #1e5cb3;
+    font-weight:500 ;
+    text-decoration: none;
+}
+
+main .form fieldset[name="form-accordian"] a:hover {
+    text-decoration: underline;
+}
+
+main .form fieldset[name="personaldetails"] .field-current-address {
+    grid-column: span 4;
+}
+
+@media (width <= 768px) {
+    main .form fieldset[name="loandetails"] .panel-wrapper,
+    main .form fieldset[name="personaldetails"] .panel-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    main .form fieldset[name="personaldetails"] .field-current-address {
+        grid-column: span 1;
+    }
+
+
 }
 
 
