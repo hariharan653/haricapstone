@@ -180,6 +180,13 @@ main .form input:disabled{
     background-color: var(--form-input-disable-color);
 }
 
+main .form .loan-summary-panel .field-emiamountdetail input,
+main .form .loan-summary-panel .field-rateofinterest input {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+}
+
 main .form form .radio-wrapper.field-invalid > input,
 main .form form .checkbox-wrapper.field-invalid > input {
     outline: 1px solid var(--form-error-color);
@@ -983,6 +990,38 @@ main .form .field-loantenuredetail input[type="number"] {
    text-align: center;
    border-radius: 8px;
 }
+
+main .form .loan-summary-panel {
+    background-color: #b29564;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 380px;
+}
+
+main .form .loan-summary-panel .field-emiamountdetail,
+main .form .loan-summary-panel .field-rateofinterest,
+main .form .loan-summary-panel .field-taxes {
+    border-left: 3px solid #f3a533;
+    padding-left: 12px;
+    margin-bottom: 18px;
+}
+
+main .form .loan-summary-panel .cmp-text:first-child {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main .form .loan-summary-panel .field-loanoffernote {
+    background-color: #c9822b;
+    color: #fff;
+    padding: 16px;
+    margin: 24px -24px -24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    font-size: 13px;
+}
+
 
 
 
