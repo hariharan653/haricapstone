@@ -45,14 +45,14 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 /**
  * Calculates EMI (Equated Monthly Installment)
- * @param {number} loanAmountDetail Loan amount (INR)
- * @param {number} loanTenureDetail Loan tenure (in months)
+ * @param {number} loanamountdetail Loan amount (INR)
+ * @param {number} loantenuredetail Loan tenure (in months)
  * @param {number} rateOfInterest Rate of interest
  * @returns {number} EMI amount
  */
-function calculateEMI(loanAmountDetail, loanTenureDetail, rateOfInterest) {
-  const principal = Number(loanAmountDetail);
-  const tenure = Number(loanTenureDetail);
+function calculateEMI(loanamountdetail, loantenuredetail, rateOfInterest) {
+  const principal = Number(loanamountdetail);
+  const tenure = Number(loantenuredetail);
   const monthlyRate = Number(rateOfInterest) / 12 / 100;
 
   if (!principal || !tenure) {
