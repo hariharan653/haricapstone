@@ -264,16 +264,12 @@ main .form form fieldset.radio-group-wrapper {
 }
 
 main .form fieldset[name="form-accordian"] > legend {
-    background: #f2f4f7;
-    padding: 16px 24px;
+    background: #6783bc;
+    padding: 14px 20px;
     font-size: 16px;
     font-weight: 600;
     color: #1f2937;
-    border-radius: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+    border-radius: 12px;
 }
 
 main .form form fieldset.checkbox-group-wrapper > legend,
@@ -589,6 +585,11 @@ main .form .field-panel3 .field-wrapper {
 
 main .form fieldset[name="header"] .field-wrapper {
     grid-column: unset;
+}
+
+main .form fieldset[name="loandetails"] .field-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 main .form .field-panel3 .field-wrapper:hover {
@@ -1109,8 +1110,9 @@ main .form fieldset[name="form-accordian"] {
 main .form fieldset[name="loandetails"],
 main .form fieldset[name="personaldetails"] {
     padding: 24px;
-    border: none;
-    background: #fff;
+    border-radius: 12px;
+    background: #f4f7fb;
+    margin-bottom: 30px;
 }
 
 main .form fieldset[name="form-accordian"] .field-label {
@@ -1157,6 +1159,22 @@ main .form .field-personaldetails {
 main .form .field-loandetails > legend::after,
 main .form .field-personaldetails > legend::after {
     font-size: 14px;
+}
+
+main .form fieldset[name="loandetails"] .field-wrapper > div {
+    border-left: 2px solid #f3a533;
+    padding-left: 14px;
+}
+
+main .form fieldset[name="loandetails"] .field-label {
+    font-size: 13px;
+    color: #777;
+}
+
+main .form fieldset[name="loandetails"] .field-value {
+    font-size: 15px;
+    color: #222;
+    font-weight: 600;
 }
 
 @media (width <= 768px) {
