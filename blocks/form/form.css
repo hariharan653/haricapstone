@@ -992,7 +992,7 @@ main .form .field-loantenuredetail input[type="number"] {
 }
 
 .field-loan-summary-panel {
-    background-color: #b29564;
+    background-color: #fdf3e4;
     border-radius: 16px;
     padding: 24px;
     max-width: 380px;
@@ -1020,6 +1020,23 @@ main .form .field-loantenuredetail input[type="number"] {
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     font-size: 13px;
+    line-height: 1.6;
+}
+
+.field-loan-summary-panel .field-loansummarytitle .cmp-text {
+    font-size: 14px;
+    color: #6b6b6b;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.field-loan-summary-panel .field-loansummarytitle .cmp-text strong,
+.field-loan-summary-panel .field-loansummarytitle .cmp-text b {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 6px;
 }
 
 
