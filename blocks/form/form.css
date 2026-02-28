@@ -223,12 +223,12 @@ main .form textarea {
 
 main .form .field-loandetails > legend,
 main .form .field-personaldetails > legend {
-    background: #e3ebf5;
-    color: #1a2b49;
+    background: #2f80ed !important;
+    color: white !important;
     font-weight: 600;
     font-size: 16px;
-    padding: 16px 20px;
-    border-radius: 12px 12px 0 0;
+    padding: 14px 20px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1109,10 +1109,13 @@ main .form fieldset[name="form-accordian"] {
 
 main .form fieldset[name="loandetails"],
 main .form fieldset[name="personaldetails"] {
-    padding: 24px;
+    padding: 16px 0 !important;
     border-radius: 12px;
-    background: #f4f7fb;
+    background: #3981df;
     margin-bottom: 30px;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 main .form fieldset[name="form-accordian"] .field-label {
@@ -1161,9 +1164,10 @@ main .form .field-personaldetails > legend::after {
     font-size: 14px;
 }
 
+main .form fieldset[name="personaldetails"] .field-wrapper > div
 main .form fieldset[name="loandetails"] .field-wrapper > div {
-    border-left: 2px solid #f3a533;
-    padding-left: 14px;
+    border-left: 3px solid #2f80ed;
+    padding-left: 12px;
 }
 
 main .form fieldset[name="loandetails"] .field-label {
