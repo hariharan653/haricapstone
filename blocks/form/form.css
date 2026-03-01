@@ -1217,6 +1217,7 @@ main .form .field-loanamount.field-wrapper {
     margin-bottom: 16px;
 }
 
+main .form fieldset.field-lamountpanel,
 main .form .field-loanamount.field-wrapper::before {
     content: "";
     position: absolute;
@@ -1226,6 +1227,19 @@ main .form .field-loanamount.field-wrapper::before {
     width: 4px;
     background :#2f80ed;
     border-radius: 2px;
+}
+
+main .form .field-loan-info {
+    background: #f6efe3;
+    border-radius: 14px;
+    padding: 14px 24px;
+    margin-bottom: 30px;
+    font-size: 10px;
+    color: #5c4b3a;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e6dcc9;
 }
 
 
