@@ -1104,7 +1104,7 @@ main .form fieldset[name="personaldetails"] {
 
 main .form fieldset[name="loandetails"] .field-wrapper > div,
 main .form fieldset[name="personaldetails"] .field-wrapper > div {
-    border-left: 4px solid #2a5298;
+    border-left: 4px solid #687995;
     padding-left: 16px;
 }
 
