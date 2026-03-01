@@ -1196,13 +1196,14 @@ main .form fieldset[name="loandetail"] {
     border: 1px solid #eef2f7
 }
 
-.field-lamountpanel {
+main.form .field-lamountpanel {
     position: relative;
     padding-left: 16px;
     margin-bottom: 12px;
 }
 
-.field-lamountpanel::before {
+main.form .field-loanamountdetail::before,
+main.form .field-loanamount::before {
     content: "";
     position: absolute;
     left: 0;
