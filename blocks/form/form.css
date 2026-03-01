@@ -864,6 +864,7 @@ main .form form select[multiple] {
 
 main .form fieldset[name="header"] {
     grid-column: span 12 !important;
+    padding: 10px 30px !important;
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
     border: none !important;
     margin: 0 !important;
