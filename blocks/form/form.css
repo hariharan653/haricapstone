@@ -1179,6 +1179,15 @@ main .form .field-footerinfo::after {
     color: #1e5cb3;
 }
 
+main .form fieldset[name="loandetail"] {
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
+    border: 1px solid #eef2f7
+}
+
 
 
 
