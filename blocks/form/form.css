@@ -426,13 +426,15 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
 }
 
 main .form fieldset[name="header"] .field-wrapper[name="image1"] img {
-    height: 50px;
+    height: 45px;
     width: auto;
+    object-fit: contain;
 }
 
 main .form fieldset[name="header"] .field-wrapper[name="image2"] img {
-    height: 55px;
+    height: 40px;
     width: auto;
+    object-fit: contain;
 }
 
 /* Responsive adjustments for cards */
@@ -575,6 +577,7 @@ main .form .field-panel3 .field-wrapper {
 
 main .form fieldset[name="header"] .field-wrapper {
     grid-column: unset;
+    margin: 0;
 }
 
 main .form .field-panel3 .field-wrapper:hover {
@@ -689,6 +692,7 @@ main .form fieldset[name="header"] .panel-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 main .form form .repeat-wrapper{
@@ -857,8 +861,9 @@ main .form form select[multiple] {
 
 main .form fieldset[name="header"] {
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
-    padding: 20px 40px;
+    padding: 12px 30px;
     border: none;
+    margin: 0;
 }
 
 main .form form .field-footer-text {
