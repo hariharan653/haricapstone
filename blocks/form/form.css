@@ -430,14 +430,14 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
 }
 
 main .form fieldset[name="header"] .field-wrapper[name="image1"] img {
-    height: 45px;
-    width: auto;
+    height: 45px !important;
+    width: auto !important;
     object-fit: contain;
 }
 
 main .form fieldset[name="header"] .field-wrapper[name="image2"] img {
-    height: 40px;
-    width: auto;
+    height: 30px !important;
+    width: auto !important;
     object-fit: contain;
 }
 
@@ -580,8 +580,8 @@ main .form .field-panel3 .field-wrapper {
 }
 
 main .form fieldset[name="header"] .field-wrapper {
-    grid-column: unset;
-    margin: 0;
+    grid-column: unset !important;
+    margin: 0 !important;
 }
 
 main .form .field-panel3 .field-wrapper:hover {
@@ -693,10 +693,10 @@ main .form form .panel-wrapper{
 }
 
 main .form fieldset[name="header"] .panel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100%;
 }
 
 main .form form .repeat-wrapper{
@@ -864,10 +864,16 @@ main .form form select[multiple] {
 }
 
 main .form fieldset[name="header"] {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
-    padding: 12px 30px;
-    border: none;
-    margin: 0;
+    padding: 10px 30px !important;
+    border: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border-radius: 0;
 }
 
 main .form form .field-footer-text {
