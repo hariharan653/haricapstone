@@ -1116,17 +1116,72 @@ main .form fieldset[name="personaldetails"] .field-value {
 }
 
 main .form .field-easymanagement {
-    background: #d7e0ed;
+    background: #eef2f7;
     padding: 18px 24px;
     border-radius: 12px;
-    margin: 24px 0;
     font-size: 16px;
     font-weight: 700;
     color: #1f2937;
     box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
     border: 1px solid #e5e7eb;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
+main .form .field-downloadapp {
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+main .form .field-downloadapp:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+main .form .field-downloadapp a {
+    color: #1e5cb3;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+main .form .field-downloadapp::after {
+    content : ",";
+    float: right;
+    font-size: 20px;
+    color: #1e5cb3;
+}
+
+main .form .field-footerinfo {
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+main .form .field-footerinfo:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+main .form .field-footerinfo a {
+    color: #1e5cb3;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+main .form .field-footerinfo::after {
+    content : ",";
+    float: right;
+    font-size: 20px;
+    color: #1e5cb3;
+}
 
 
 
