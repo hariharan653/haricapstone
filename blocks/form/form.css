@@ -1092,6 +1092,14 @@ main .form fieldset[name="personaldetails"] .field-wrapper > div {
     padding-left: 16px;
 }
 
+.field-loanamount .field-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 6px;
+    display: block;
+}
+
 main .form fieldset[name="loandetails"] .field-label,
 main .form fieldset[name="personaldetails"] .field-label {
     font-size: 13px;
@@ -1186,6 +1194,23 @@ main .form fieldset[name="loandetail"] {
     margin-bottom: 32px;
     box-shadow: 0 10px 30px rgb(0 0 0 / 8%);
     border: 1px solid #eef2f7
+}
+
+.field-lamountpanel {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+}
+
+.field-lamountpanel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 3px;
+    height: 20px;
+    background-color: #1a73e8;
+    border-radius: 2px;
 }
 
 
