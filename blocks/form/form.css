@@ -262,6 +262,10 @@ main .form fieldset[name="personaldetails"] > legend {
     border-radius: 16px 16px 0 0;
 }
 
+main .form fieldset[name="header"] legend{
+    display: none;
+}
+
 main .form form fieldset.checkbox-group-wrapper > legend,
 main .form form fieldset.radio-group-wrapper > legend {
     padding-left: 0;
