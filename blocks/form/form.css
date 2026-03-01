@@ -242,17 +242,17 @@ main .form form fieldset.radio-group-wrapper {
 }
 
 main .form fieldset[name="form-accordian"] > legend {
-    background: #6783bc;
+    background: #7a8cb0;
     padding: 14px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #1f2937;
+    color: #afc9ed;
     border-radius: 12px;
 }
 
 main .form fieldset[name="loandetails"] > legend,
 main .form fieldset[name="personaldetails"] > legend {
-    background: linear-gradient(90deg, #123c72, #2a5298);
+    background: linear-gradient(90deg, #afc9ed, #526482);
     color: #fff;
     padding: 20px 26px;
     font-size: 19px;
