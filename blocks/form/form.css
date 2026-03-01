@@ -432,13 +432,13 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
 main .form fieldset[name="header"] .field-wrapper[name="image1"] img {
     height: 45px !important;
     width: auto !important;
-    object-fit: contain;
+    display: block;
 }
 
 main .form fieldset[name="header"] .field-wrapper[name="image2"] img {
     height: 30px !important;
     width: auto !important;
-    object-fit: contain;
+    display: block;
 }
 
 /* Responsive adjustments for cards */
@@ -865,7 +865,6 @@ main .form form select[multiple] {
 main .form fieldset[name="header"] {
     grid-column: span 12 !important;
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
-    padding: 10px 30px !important;
     border: none !important;
     margin: 0 !important;
 }
