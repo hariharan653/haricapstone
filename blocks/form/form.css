@@ -876,6 +876,17 @@ main .form .field-importantlinktext p {
     margin: 0;
 }
 
+main .form .field-guidelinestext p {
+    background: #e8f1ff;
+    color: #1e5cb3;
+    padding: 14px 18px;
+    border-left: 4px solid #2f80ed;
+    border-radius: 6px;
+    font-size: 8px;
+    line-height: 1.6;
+    margin-top: 16px;
+}
+
 main .form form .field-footer-text p {
     margin: 0;
     color: #fff;
@@ -1169,6 +1180,7 @@ main .form .field-footerinfo::after {
     font-size: 10px;
     color: #1e5cb3;
 }
+
 
 
 
