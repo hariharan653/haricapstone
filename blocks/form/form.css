@@ -885,6 +885,13 @@ main .form .field-guidelinestext p {
     margin-top: 16px;
 }
 
+main .form .field-loanamount p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+    margin: 0;
+}
+
 main .form form .field-footer-text p {
     margin: 0;
     color: #fff;
@@ -1196,42 +1203,30 @@ main .form fieldset[name="loandetail"] {
     border: 1px solid #eef2f7
 }
 
-main.form .field-lamountpanel {
-    position: relative;
-    padding-left: 16px;
-    margin-bottom: 12px;
+main .form fieldset.field-lamountpanel {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
+    padding: 28px 30px;
+    margin-bottom: 30px;
 }
 
-main.form .field-loanamountdetail::before,
-main.form .field-loanamount::before {
+main .form .field-loanamount.field-wrapper {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 16px;
+}
+
+main .form .field-loanamount.field-wrapper::before {
     content: "";
     position: absolute;
     left: 0;
     top: 4px;
-    width: 3px;
-    height: 20px;
-    background-color: #1a73e8;
+    height: 22px;
+    width: 4px;
+    background :#2f80ed;
     border-radius: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
