@@ -1150,36 +1150,23 @@ main .form .field-downloadapp a {
 }
 
 main .form .field-downloadapp::after {
-    content : ",";
+    content: ">";
     float: right;
     font-size: 20px;
     color: #1e5cb3;
 }
 
-main .form .field-footerinfo {
-    background: #fff;
-    padding: 16px 20px;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
 
-main .form .field-footerinfo:hover {
-    background: #f8fafc;
-    border-color: #cbd5e1;
-}
 
 main .form .field-footerinfo a {
     color: #1e5cb3;
-    font-weight: 500;
+    font-weight: 300;
     text-decoration: none;
 }
 
 main .form .field-footerinfo::after {
-    content : ",";
     float: right;
-    font-size: 20px;
+    font-size: 10px;
     color: #1e5cb3;
 }
 
