@@ -1057,6 +1057,7 @@ main .form .field-loantenuredetail input[type="number"] {
     height: 61px;
     margin-left: 38px;
     margin-top: 67px;
+    padding-left: 12px;
 }
 
 .field-loan-summary-panel .cmp-text:first-child {
@@ -1109,6 +1110,7 @@ main .form fieldset[name="personaldetails"] .field-wrapper > div {
     height: 61px;
     margin-left: 38px;
     margin-top: 67px;
+    padding-left: 12px;
 }
 
 .field-loanamount .field-label {
