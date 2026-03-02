@@ -1,4 +1,12 @@
 /* header and nav layout */
+
+header.header-wrapper {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
