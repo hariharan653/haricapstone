@@ -429,23 +429,38 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
     object-fit: contain;
 }
 
-main .form fieldset[name="header"] .field-wrapper[name="image1"] {
-    flex: 0 0 auto;
+main .form .field-panel3 .field-wrapper {
+    text-align: center;
+    transition: 0.3s ease;
 }
 
-main .form fieldset[name="header"] .field-wrapper[name="image1"] img {
-    height: 55px;
-    width: auto;
+main .form fieldset[name="header"] .field-wrapper {
+    all: unset;
     display: block;
 }
 
-main .form fieldset[name="header"] .field-wrapper[name="image2"] {
+main .form .field-panel3 .field-wrapper:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+main .form fieldset[name="header"] .field-wrapper:first-child {
+    flex: 0 0 auto;
+}
+
+main .form fieldset[name="header"] .field-wrapper:first-child img {
+    height: 65px !important;
+    width: auto !important;
+    display: block;
+}
+
+main .form fieldset[name="header"] .field-wrapper:last-child {
    margin-left: auto !important;
 }
 
-main .form fieldset[name="header"] .field-wrapper[name="image2"] img {
-    height: 55px;
-    width: auto;
+main .form fieldset[name="header"] .field-wrapper:last-child img {
+    height: 60px !important;
+    width: auto !important;
     display: block;
 }
 
@@ -582,22 +597,6 @@ main .file-wrapper .file-description button::after{
     transform: translate(-50%, -50%);
 }
 
-main .form .field-panel3 .field-wrapper {
-    text-align: center;
-    transition: 0.3s ease;
-}
-
-main .form fieldset[name="header"] .field-wrapper {
-    grid-column: unset !important;
-    width: auto !important;
-    margin: 0 !important;
-}
-
-main .form .field-panel3 .field-wrapper:hover {
-    transform: translateY(-4px);
-    cursor: pointer;
-}
-
 /** Wizard Styling */
 main .form form .wizard  {
   display: grid;
@@ -705,6 +704,7 @@ main .form fieldset[name="header"] .panel-wrapper {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+    gap: 20px;
 }
 
 main .form form .repeat-wrapper{
@@ -872,11 +872,10 @@ main .form form select[multiple] {
 }
 
 main .form fieldset[name="header"] {
-    padding: 16px 50px !important;
+    padding: 18px 60px !important;
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
     border: none !important;
     border-radius: 14px;
-    margin-top: 0 !important;
 }
 
 main .form form .field-footer-text {
