@@ -429,14 +429,22 @@ main .form form fieldset.cards > .checkbox-wrapper > label > img {
     object-fit: contain;
 }
 
+main .form fieldset[name="header"] .field-wrapper[name="image1"] {
+    flex: 0 0 auto;
+}
+
 main .form fieldset[name="header"] .field-wrapper[name="image1"] img {
-    height: 42px;
+    height: 55px;
     width: auto;
     display: block;
 }
 
+main .form fieldset[name="header"] .field-wrapper[name="image2"] {
+   margin-left: auto !important;
+}
+
 main .form fieldset[name="header"] .field-wrapper[name="image2"] img {
-    height: 42px;
+    height: 55px;
     width: auto;
     display: block;
 }
@@ -864,10 +872,10 @@ main .form form select[multiple] {
 }
 
 main .form fieldset[name="header"] {
-    padding: 12px 40px !important;
+    padding: 16px 50px !important;
     background: linear-gradient(90deg, #0a1f44 0%, #091a36 100%);
     border: none !important;
-    border-radius: 12px;
+    border-radius: 14px;
     margin-top: 0 !important;
 }
 
