@@ -1053,9 +1053,10 @@ main .form .field-loantenuredetail input[type="number"] {
 .field-loan-summary-panel .field-emiamountdetail,
 .field-loan-summary-panel .field-rateofinterest,
 .field-loan-summary-panel .field-taxes {
-    border-left: 3px solid #f3a533;
-    padding-left: 12px;
-    margin-bottom: 18px;
+    border-left: 4px solid #f5c36d;
+    height: 61px;
+    margin-left: 38px;
+    margin-top: 67px;
 }
 
 .field-loan-summary-panel .cmp-text:first-child {
@@ -1105,7 +1106,9 @@ main .form fieldset[name="personaldetails"] {
 main .form fieldset[name="loandetails"] .field-wrapper > div,
 main .form fieldset[name="personaldetails"] .field-wrapper > div {
     border-left: 4px solid #687995;
-    padding-left: 16px;
+    height: 61px;
+    margin-left: 38px;
+    margin-top: 67px;
 }
 
 .field-loanamount .field-label {
